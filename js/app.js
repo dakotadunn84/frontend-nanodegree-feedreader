@@ -6,6 +6,19 @@
  * jQuery.
  */
 
+ var Goku = {
+   powerLevel:9999
+ }
+
+var scouter = $("<div id='scouterMessage'>Goku's Power Level: </div>");
+    //$(".header-title").append("<p id = scouterMessage>Goku's Power Level: </p>"));
+    //reading.innerHTML = "Goku's Power Level: " + Goku.powerLevel;
+//var counter = $("#scouterMessage");
+
+scouter.append(Goku.powerLevel);
+
+$(".header-title").after(scouter);
+
 // The names and URLs to all of the feeds we'd like available.
 var allFeeds = [
     {
